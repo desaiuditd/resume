@@ -9,7 +9,7 @@
 \LoadClass{article}
 
 % Package Imports
-\usepackage[hmargin=1.25cm, vmargin=0.7cm]{geometry}
+\usepackage[hmargin=0.8cm, vmargin=0.7cm]{geometry}
 \usepackage[usenames,dvipsnames]{xcolor}
 \usepackage[hidelinks]{hyperref}
 \usepackage{titlesec}
@@ -26,8 +26,8 @@
 
 % Set main fonts
 \defaultfontfeatures{Mapping=tex-text}
-\setmainfont[Color=primary, Path = fonts/lato/]{Lato-Lig}
-\setsansfont[Scale=MatchLowercase,Mapping=tex-text, Path = fonts/raleway/]{Raleway-ExtraLight}
+\setmainfont[Color=primary, Path = fonts/lato/]{Lato-Reg}
+\setsansfont[Scale=MatchLowercase,Mapping=tex-text, Path = fonts/raleway/]{Raleway-Regular}
 \newcommand{\custombold}[1]{\color{subheadings}\fontspec[Path = fonts/lato/]{Lato-Reg}\selectfont #1 \normalfont}
 
 % Date command
