@@ -46,15 +46,16 @@
 
 \documentclass[]{deedy-resume-openfont}
 
-
 \begin{document}
+
+\color{primary}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
 %     LAST UPDATED DATE
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\lastupdated
+% \lastupdated
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
@@ -62,12 +63,11 @@
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-
 \namesection{Udit}{Desai}{
-  1497, Fruitdale Avenue, San Jose, CA - 95128 \\
-  831.212.4307 |
+  Unit 33, 29-33, Joyce Street, Pendle Hill, NSW - 2145 \\
+  \href{tel:+61459343918}{+61.459.343.918} |
   \href{mailto:desaiuditd@gmail.com}{desaiuditd@gmail.com} |
-  http://blog.incognitech.in
+  \href{https://blog.incognitech.in}{https://blog.incognitech.in}
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -82,31 +82,32 @@
 %     EDUCATION
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Education} 
-
+\section{Education}
 \subsection{Santa Clara University}
 \descript{MS in Computer Science}
-\location{Expected June 2017 | Santa Clara, CA \\ GPA: 3.22}
+\location{June 2017 | Santa Clara, CA}
+\sectionsep
 \sectionsep
 
 \subsection{DA-IICT}
 \descript{MS in Information Technology}
-\location{May 2013 | Gandhinagar, India \\ GPA: 3.13}
+\location{May 2013 | Gandhinagar, India}
+\sectionsep
 \sectionsep
 
 \subsection{University of Pune}
 \descript{BS in Computer Science}
-\location{June 2011 |  Pune, India \\ GPA: 3.17}
-\sectionsep
+\location{June 2011 | Pune, India}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     LINKS
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\section{Links} 
-Github:// \href{https://github.com/desaiuditd}{\custombold{desaiuditd}} \\
-LinkedIn://  \href{https://www.linkedin.com/in/desaiuditd}{\custombold{desaiuditd}} \\
-Devpost://  \href{https://devpost.com/desaiuditd}{\custombold{desaiuditd}}
+\section{Links}
+\begin{tabular}{ l l }
+Github: & \href{https://github.com/desaiuditd}{@desaiuditd} \\
+LinkedIn: & \href{https://www.linkedin.com/in/desaiuditd}{@desaiuditd} \\
+Devpost: & \href{https://devpost.com/desaiuditd}{@desaiuditd}
+\end{tabular}
 \sectionsep
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -115,17 +116,26 @@ Devpost://  \href{https://devpost.com/desaiuditd}{\custombold{desaiuditd}}
 
 \section{Skills}
 \subsection{Languages}
-JavaScript \textbullet{} Java \textbullet{} PHP \textbullet{} Ruby \\ ShellScript \textbullet{} EcmaScript \textbullet{} R \textbullet{} Python \\~\\
+TypeScript \textbullet{} JavaScript \textbullet{} PHP \textbullet{} Go \\
+ShellScript \textbullet{} Ruby \textbullet{} R \textbullet{} Python
+\sectionsep
+\sectionsep
+
 \subsection{Frameworks}
-Node \textbullet{} Meteor \textbullet{} Express \textbullet{} Android \\ WordPress \textbullet{} Backbone \textbullet{} Ruby on Rails \\ ElasticSearch \textbullet{} React \\~\\
+NodeJS \textbullet{} Express \textbullet{} React \textbullet{} Gutenberg \\
+WordPress \textbullet{} BackboneJS \textbullet{} Kafka \\
+MeteorJS \textbullet{} Ruby on Rails \textbullet{} ElasticSearch
+\sectionsep
+\sectionsep
+
 \subsection{Database}
-SQL \textbullet{} MongoDB \\~\\
+MySQL \textbullet{} PostgreSQL \textbullet{} MongoDB
+\sectionsep
+\sectionsep
+
 \subsection{Tools}
-Git \textbullet{} Subversion \textbullet{} Jekyll \textbullet{} AWS \\ Amazon Alexa \textbullet{} IBM Watson \\
-Microsoft Azure
-%\location{Over 5000 lines:}
-%\location{Over 1000 lines:}
-%\location{Familiar:}
+Git \textbullet{} Subversion \textbullet{} Jira \textbullet{} AWS \\
+Jekyll \textbullet{} Amazon Alexa \textbullet{} IBM Watson
 \sectionsep
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -152,16 +162,34 @@ Microsoft Azure
 %\sectionsep
 
 \section{Extra Curriculum}
+
+\subsection{Open Source}
+\location{March 2014 – Present}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Contributions in \href{https://github.com/WordPress/gutenberg/pulls?q=is\%3Apr+author\%3Adesaiuditd}{Gutenberg}
+\item \href{https://core.trac.wordpress.org/report/25?USER=desaiuditd}{Contributions} in \href{https://github.com/WordPress/wordpress-develop/pulls?q=is\%3Apr+author\%3Adesaiuditd}{WordPress Core}
+\item Other \href{https://profiles.wordpress.org/desaiuditd/#content-plugins}{WordPress Plugins}
+\end{tightemize}
+\sectionsep
+
+
 \subsection{Freelance}
 \location{WordPress Development | Remote}
 \location{February 2014 – August 2015}
-\vspace{\topsep} % Hacky fix for awkward extra vertical space
 \begin{tightemize}
-\item \textbf{\textit{Lead Engineer}} at Moxie Media Group, NY, USA
-\item \textbf{\textit{WordPress Engineer}} at XWP.co Pty. Ltd., Melbourne, Australia
-\item Built up software requirements \& developed websites for clients.
-\item Built Widget Tracking module for Stream WordPress plugin
-\item Developed XWP’s new website for 2014.
+\item \textbf{\textit{WordPress Engineer}} at XWP.co Pty. Ltd., Australia
+% \item Built Widget Tracking module for Stream WordPress plugin
+% \item Developed XWP’s new website for 2014.
+\end{tightemize}
+\location{December 2014 – August 2015}
+\begin{tightemize}
+\item \textbf{\textit{Lead Engineer}} at Moxie Media Group, USA
+% \item Built up software requirements \& developed websites for clients.
+\end{tightemize}
+\location{June 2022 – September 2023}
+\begin{tightemize}
+\item \textbf{\textit{Web Engineer}} at 10up, EMEA (UK)
 \end{tightemize}
 \sectionsep
 
@@ -181,23 +209,32 @@ Microsoft Azure
 
 \section{Experience}
 
-\runsubsection{Santa Clara University}
-\descript{| Research Assistant }
-\location{January 2016 – January 2017 | Santa Clara, CA}
+\runsubsection{Nine Publishing}
+\descript{| Senior Software Engineer }
+\location{April 2018 – Present | Sydney, Australia}
 \vspace{\topsep} % Hacky fix for awkward extra vertical space
 \begin{tightemize}
-\item Led a team for a cross-platform application called HOME for \textbf{\textit{Community Technology Alliance}} who is a partner of \textbf{\textit{Frugal Innovation Lab}} incubated within Santa Clara University.
-\item Successfully delivered the first phase of HOME with VI-SPDAT scoring algorithm, HMIS data integration and a survey management module using Meteor – a Node.js framework.
+\item Empowering the newsrooms behind Sydney Morning Herald, The Age, Brisbane Times \& Australian Financial Review by building world class editorial tools and publishing platform.
 \end{tightemize}
 \sectionsep
 
-\runsubsection{Community Technology Alliance}
-\descript{| Software Engineer Intern }
-\location{June 2016 – September 2016 | San Jose, CA}
+\runsubsection{OpenMessage}
+\descript{| Full Stack Engineer }
+\location{August 2017 – February 2018 | San Francisco, CA, USA}
 \begin{tightemize}
-\item Deployed and launched HOME application for Monterey City for the first phase.
-\item Fixed bugs reported for VI-SPDAT algorithm, HMIS data integration and a survey management module.
-\item Working on Data Analytics tools like Tableau, Looker to process and analyze data for homeless people.
+\item Designed architecture and implemented OpenMessage backend API to send multimedia messages using NodeJS and OpenAPI specification.
+\item Built front-end application to interact with the backend API using React.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Santa Clara University}
+\descript{| Research Assistant }
+\location{January 2016 – January 2017 | Santa Clara, CA, USA}
+\begin{tightemize}
+\item Developed, deployed and launched HOME application v1.0 for Monterey City council.
+\item Integrated HOME app with HMIS hadoop cluster by implementing OAuth 2.0 strategy.
+\item Collected data for 10,000+ homeless people and verified them for housing by implementing VI-SPDAT scoring algorithm.
+\item Resolved 300+ issues and reduced testing time with 70\% by implementing automated unit test framework using TravisCI \& Mocha.
 \end{tightemize}
 \sectionsep
 
@@ -205,58 +242,55 @@ Microsoft Azure
 \descript{| Web Developer }
 \location{May 2013 – February 2015 | Pune, India}
 \begin{tightemize}
-\item Worked on WordPress websites for rtCamp's clients in which I built WordPress plugins \& themes.
-\item Re-factored rtCamp's major media plugin called rtMedia with new feature enhancements.
-\item Led the development team for rtBiz project which is Contact Management platform on WordPress.
+\item Increased revenues for clients with 20\% by developing 10 websites from scratch \& developing WordPress themes \& plugins.
+\item Increased rtCamp’s CRM performance with 25\% by leading the development team for rtBiz - CRM tool.
 \end{tightemize}
-\sectionsep
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     RESEARCH
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Projects}
-\runsubsection{SlyCam}
-%\descript{| Head Undergrad Research}
+
+\runsubsection{Ink Authoring}
 \location{}
 \begin{tightemize}
-\item An IoT door lock system with Motion Sensor, Camera module and ESP8266 micro-controller which notifies who has visited your house on your phone and lets you open the door lock remotely.
+\item Ink Authoring is a publishing tool built on top of WordPress and its new block based editor Gutenberg. It helps our newsrooms of SMH, The Age \& AFR to write news articles and publish them on our news websites and mobile apps.
 \end{tightemize}
 \sectionsep
 
-\runsubsection{Outta.The.Blues}
-%\descript{| Head Undergraduate Researcher}
+\runsubsection{SlyCam}
 \location{}
 \begin{tightemize}
-\item A Chrome Extension that keeps track of your health by analyzing pictures of just your face over a fixed interval. \\
-\item Technology: HTML, CSS, JavaScript, Microsoft Azure, Microsoft Cognitive Services - Face API
+\item Notified who visited your house and opened door remotely by building an IoT door lock system using Node.js, MongoDB, AWS, Adruino, Motion Sensor, Camera module \& ESP8266.
 \end{tightemize}
 \sectionsep
 
 \runsubsection{Wayfarer}
-%\descript{| Head Undergraduate Researcher}
 \location{}
 \begin{tightemize}
-\item Wayfarer is a machine learning based recommendation system for your travel plans. It helps you by doing a layered Sentiment Analysis on your Twitter profile.
-\item Technology: Python \& R for Data crunching, React Native, IBM Watson API, IBM Conversation API, Amazon Alexa
+\item Wayfarer is a machine learning based recommendation system for your travel plans. It helps you by performing a layered Sentiment Analysis on your Twitter profile using Python \& R for Data crunching, React Native, IBM Watson API \& Amazon Alexa.
 \end{tightemize}
-\sectionsep
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     AWARDS
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Awards} 
-\begin{tabular}{rll}
-2017 & Winner, Best use of Microsoft Azure  & HackUCSC \\
-2016 & Top 6 Finalists  & HackRice \\
-2016 & 1st Place  & HackRice \\
-2016 & Winner, Best use of AWS  & AngelHack \\
-2016 & Winner, Best use of Amazon Alexa & AngelHack \\
-2016 & 2nd Place, Best User Voice Experience & HackDavis \\
-2016 & Winner, Best .Tech domain & HackDavis \\
+\section{Hackathons} 
+\begin{tabular}{ l l l l }
+
+Apr, 2017 & BroncoHack & Best use of AWS & \href{https://github.com/desaiuditd/slycam}{Github} \\
+
+Jan, 2017 & HackUCSC & Best use of Microsoft Azure & \href{https://github.com/desaiuditd/outtatheblues}{Github} \\
+
+Nov, 2016 & HackRice & Top 6 Finalists  & \href{https://github.com/desaiuditd/wayfarer}{Github} \\
+
+Sep, 2016 & TechCrunch Disrupt & Best WordPress Data Hack & \href{https://github.com/desaiuditd/incognitech}{Github} \\
+
+Jun, 2016 & HackDavis & Best User Voice Experience & \href{https://github.com/desaiuditd/roomscore}{Github} \\
+
 \end{tabular}
-\sectionsep
 
 \end{minipage} 
-\end{document}  \documentclass[]{article}
+\end{document}
+\documentclass[]{article}
