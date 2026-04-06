@@ -8,8 +8,8 @@ trim_trailing_whitespace = true
 indent_style = tab
 indent_size = 4
 
-[*.cls,*.tex]
+[{*.cls,*.tex}]
 indent_style = space
 
-[*.tex]
+[{*.tex}]
 indent_size = 2
