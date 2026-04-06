@@ -1,0 +1,74 @@
+%-------------------------------------------------------------------------------
+%	SECTION TITLE
+%-------------------------------------------------------------------------------
+\cvsection{Technical Leadership}
+
+
+%-------------------------------------------------------------------------------
+%	CONTENT
+%-------------------------------------------------------------------------------
+\begin{cventries}
+
+%---------------------------------------------------------
+  \cventry
+    {Novel CMS Architecture --- Gutenberg + Microservices Bridge} % Role/Title
+    {Nine Publishing} % Organization
+    {Sydney, Australia} % Location
+    {2025 -- Present} % Date(s)
+    {
+      \begin{cvitems}
+        \item {Identified the core problem: WordPress/PHP expertise drying up, blocking other teams from contributing. Yet Gutenberg's block editor was loved by newsrooms for speed and editorial efficiency.}
+        \item {Architected a bridge layer connecting Gutenberg's React components to internal Go/GraphQL/Kafka APIs --- bypassing WordPress entirely for content storage. No known precedent for this pattern.}
+        \item {Core innovation: 2-way transform layer between Gutenberg blocks and internal ``Ink Blocks.''}
+            \begin{itemize}
+                \item {Write path: Gutenberg block array $\rightarrow$ Ink Blocks $\rightarrow$ GraphQL $\rightarrow$ gRPC $\rightarrow$ Kafka.}
+                \item {Read path: reverse. Required reverse-engineering Gutenberg's internal data flow.}
+            \end{itemize}
+        \item {Selective package reuse (\texttt{@wordpress/blocks}, \texttt{@wordpress/data}, \texttt{@wordpress/rich-text}) paired with custom equivalents.}
+        \item {gRPC with proto contracts for compile-time schema enforcement. Kafka decouples authoring from downstream publication.}
+        \item {Built PoC before seeking approval. ``Show-and-tell'' and architecture diagrams built org buy-in. Near production launch.}
+        \item {Impact: Other engineering teams now contribute freely --- React/TypeScript over PHP/WordPress. Resources allocated by project priority, not expertise availability.}
+      \end{cvitems}
+    }
+
+%---------------------------------------------------------
+  \cventry
+    {Brightcove Decommission -- Problem $\rightarrow$ Advocacy $\rightarrow$ PoC $\rightarrow$ Influence $\rightarrow$ Execution $\rightarrow$ Quality $\rightarrow$ Launch} % Role/Title
+    {Nine Publishing} % Organization
+    {Sydney, Australia} % Location
+    {2024 -- 2025} % Date(s)
+    {
+      \begin{cvitems}
+        \item {Identified legacy Brightcove plugin as the source of recurring production incidents --- external vendor API failures bringing down the application.}
+        \item {Built PoC replacement using already built React components in the new architecture. Advocated to senior leadership with decisive messaging.}
+        \item {Committed to lead rollout myself, as the team was occupied with other priorities.}
+        \item {Conducted bug bash, prepared test cases document, fixed 3 critical bugs pre-launch.}
+        \item {Eliminated entire incident category --- no further production failures from this source.}
+      \end{cvitems}
+    }
+
+%---------------------------------------------------------
+  \cventry
+    {Engineering Excellence --- AI, Tooling \& Capability Building} % Role/Title
+    {Nine Publishing} % Organization
+    {Sydney, Australia} % Location
+    {2023 -- Present} % Date(s)
+    {
+      \begin{cvitems}
+        \item {Built AI agents for Git commit message generation and unit test writing}
+            \begin{itemize}
+                \item {Identified these two use cases as high-impact and low-effort for AI augmentation.}
+                \item {Understanding the distinction between skill and agent patterns, promoting sustainable AI augmentation over hype-driven tooling.}
+            \end{itemize}
+        \item {Introduced Orbstack (drop-in Docker Desktop replacement), RenovateBot for automated dependency updates, and Playwright post-deploy smoke testing across the team.}
+        \item {Coaching \& Mentoring: Peer engineers in the team grew to take complex frontend work independently.}
+            \begin{itemize}
+                \item {Established a culture of knowledge sharing and continuous learning.}
+                \item {Leadership Style: open-ended questions over directives; explain rationale; show vulnerability to lower authority barriers; rubber-ducking with screen share.}
+            \end{itemize}
+        \item {Ran Engineers' Round Table forum and Deep Dive technical sessions. Established patterns and conventions that multiplied team velocity.}
+      \end{cvitems}
+    }
+
+%---------------------------------------------------------
+\end{cventries}

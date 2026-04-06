@@ -3,4 +3,7 @@
 *.log
 *.out
 *.gz
+*.fdb_latexmk
+*.fls
+*.xdv
 .vscode

@@ -11,5 +11,11 @@ brew install --cask mactex
 ## Compile and Generate PDF
 
 ```bash
-xelatex Udit_Desai_Resume.tex
+xelatex Resume.tex
+```
+
+## Compile and Generate PDF on Watch Mode
+
+```bash
+latexmk -pvc -xelatex Resume.tex
 ```
