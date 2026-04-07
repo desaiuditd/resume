@@ -17,17 +17,19 @@
     {2025 -- Present} % Date(s)
     {
       \begin{cvitems}
-        \item {Identified the core problem: WordPress/PHP expertise drying up, blocking other teams from contributing. Yet Gutenberg's block editor was loved by newsrooms for speed and editorial efficiency.}
-        \item {Architected a bridge layer connecting Gutenberg's React components to internal Go/GraphQL/Kafka APIs --- bypassing WordPress entirely for content storage. No known precedent for this pattern.}
-        \item {Core innovation: 2-way transform layer between Gutenberg blocks and internal ``Ink Blocks.''}
+        \item {Problem: WordPress/PHP expertise was a bottleneck in the team. Other teams couldn't contribute because everything needed PHP knowledge. But newsrooms loved Gutenberg for speed and editorial efficiency.}
+        \item {Solution: Re-build of the CMS layer to connect Gutenberg's React components to our internal Go/GraphQL/Kafka APIs --- bypassing WordPress entirely for content storage.}
             \begin{itemize}
-                \item {Write path: Gutenberg block array $\rightarrow$ Ink Blocks $\rightarrow$ GraphQL $\rightarrow$ gRPC $\rightarrow$ Kafka.}
-                \item {Read path: reverse. Required reverse-engineering Gutenberg's internal data flow.}
+                \item {2-way transform layer between Gutenberg blocks and internal ``Ink Blocks.''}
+                    \begin{itemize}
+                        \item {Write path: Gutenberg block array $\rightarrow$ Ink Blocks $\rightarrow$ GraphQL $\rightarrow$ gRPC $\rightarrow$ Kafka.}
+                        \item {Read path: reverse. Required reverse-engineering Gutenberg's internal data flow.}
+                    \end{itemize}
+                \item {Reused select \texttt{@wordpress/} packages (\texttt{@wordpress/blocks}, \texttt{@wordpress/data}, \texttt{@wordpress/rich-text}) with custom equivalents for the rest.}
+                \item {gRPC with proto contracts for compile-time schema enforcement. Kafka decouples authoring from downstream publication.}
+                \item {Built PoC first, then showed it to leadership. Near production launch.}
             \end{itemize}
-        \item {Selective package reuse (\texttt{@wordpress/blocks}, \texttt{@wordpress/data}, \texttt{@wordpress/rich-text}) paired with custom equivalents.}
-        \item {gRPC with proto contracts for compile-time schema enforcement. Kafka decouples authoring from downstream publication.}
-        \item {Built PoC before seeking approval. ``Show-and-tell'' and architecture diagrams built org buy-in. Near production launch.}
-        \item {Impact: Other engineering teams now contribute freely --- React/TypeScript over PHP/WordPress. Resources allocated by project priority, not expertise availability.}
+        \item {Result: Increased development velocity. Other engineering teams now contribute using React/TypeScript. Reduced reliance on PHP.}
       \end{cvitems}
     }
 
@@ -39,11 +41,11 @@
     {2024 -- 2025} % Date(s)
     {
       \begin{cvitems}
-        \item {Identified legacy Brightcove plugin as the source of recurring production incidents --- external vendor API failures bringing down the application.}
-        \item {Built PoC replacement using already built React components in the new architecture. Advocated to senior leadership with decisive messaging.}
-        \item {Committed to lead rollout myself, as the team was occupied with other priorities.}
-        \item {Conducted bug bash, prepared test cases document, fixed 3 critical bugs pre-launch.}
-        \item {Eliminated entire incident category --- no further production failures from this source.}
+        \item {Problem: The legacy Brightcove plugin kept causing production incidents --- external vendor API failures were taking down the app.}
+        \item {Solution: Built a replacement using React components already in the new architecture. Pitched the PoC to leadership.}
+        \item {Execution: Offered to lead the rollout myself since the team was busy with other priorities.}
+        \item {Quality: Conducted bug bash, wrote test cases document to help the team, fixed critical bugs before launch.}
+        \item {Result: Zero production incidents from this source since launch.}
       \end{cvitems}
     }
 
@@ -57,14 +59,14 @@
       \begin{cvitems}
         \item {Built AI agents for Git commit message generation and unit test writing}
             \begin{itemize}
-                \item {Identified these two use cases as high-impact and low-effort for AI augmentation.}
-                \item {Understanding the distinction between skill and agent patterns, promoting sustainable AI augmentation over hype-driven tooling.}
+                \item {Picked these two because they're high-impact and low-risk for AI augmentation.}
+                \item {Focused on sustainable patterns over hype-driven tooling.}
             \end{itemize}
-        \item {Introduced Orbstack (drop-in Docker Desktop replacement), RenovateBot for automated dependency updates, and Playwright post-deploy smoke testing across the team.}
-        \item {Coaching \& Mentoring: Peer engineers in the team grew to take complex frontend work independently.}
+        \item {Introduced Orbstack (Docker Desktop replacement), RenovateBot for dependency updates, and Playwright smoke tests after deploys across the team.}
+        \item {Coaching \& Mentoring: Engineers on the team grew to handle complex frontend work independently.}
             \begin{itemize}
-                \item {Established a culture of knowledge sharing and continuous learning.}
-                \item {Leadership Style: open-ended questions over directives; explain rationale; show vulnerability to lower authority barriers; rubber-ducking with screen share.}
+                \item {Built a culture of knowledge sharing and continuous learning.}
+                \item {Leadership style: open-ended questions over directives; explain the ``why''; show vulnerability to lower authority barriers; rubber-ducking with screen share.}
             \end{itemize}
         \item {Ran Engineers' Round Table forum and Deep Dive technical sessions. Established patterns and conventions that multiplied team velocity.}
       \end{cvitems}
