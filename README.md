@@ -8,14 +8,12 @@ Resume LATEX Template
 brew install --cask mactex
 ```
 
-## Compile and Generate PDF
+## Commands
 
 ```bash
-xelatex Resume.tex
-```
-
-## Compile and Generate PDF on Watch Mode
-
-```bash
-latexmk -pvc -xelatex Resume.tex
+⇒ make
+Usage:
+build                          Compile and Generate PDF
+help                           Display this help screen (default)
+watch                          Compile and Generate PDF on Watch Mode
 ```
