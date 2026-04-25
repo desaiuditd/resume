@@ -472,7 +472,8 @@
 \newcommand{\acvHeaderIconSep}{\space}
 \newcommand{\acvHeaderSocialSep}{\BeginAccSupp{ActualText={}}\quad\textbar\quad\EndAccSupp{}}
 \newcommand{\acvHeaderAfterSocialSkip}{6mm}
-\newcommand{\acvHeaderAfterQuoteSkip}{5mm}
+% ! Changed from 5mm to 1mm to reduce white space.
+\newcommand{\acvHeaderAfterQuoteSkip}{1mm}
 
 % Others
 \newcommand{\acvSectionTopSkip}{3mm}
