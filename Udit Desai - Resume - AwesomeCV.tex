@@ -20,6 +20,10 @@
 % A4 paper size by default, use 'letterpaper' for US letter
 \documentclass[11pt, a4paper]{awesome-cv}
 
+% * Both of these packages are for getting page numbers in the footer.
+\usepackage{lastpage}
+\usepackage{fancyhdr}
+
 % Configure page margins with geometry
 \geometry{left=1.2cm, top=.8cm, right=1.2cm, bottom=1.6cm, footskip=.5cm}
 
@@ -90,7 +94,10 @@
 \makecvfooter
   {\today}
   {Udit Desai~~~·~~~Résumé}
-  {\thepage}
+  % ! '*' after pageref is to avoid the link in last page number.
+  % Ref: https://stackoverflow.com/a/4236418
+  % Ref: https://stackoverflow.com/questions/4236389/page-x-of-y-in-latex-footer#comment122395019_4236418
+  {\thepage\hspace{0pt} / \pageref*{LastPage}}
 
 
 %-------------------------------------------------------------------------------
