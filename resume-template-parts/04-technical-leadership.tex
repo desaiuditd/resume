@@ -17,8 +17,8 @@
     {2024 -- Present} % Date(s)
     {
       \begin{cvitems}
-        \item {Problem: WordPress/PHP expertise was a bottleneck in the team. Other teams couldn't contribute because everything needed PHP knowledge. But newsrooms loved Gutenberg for speed and editorial efficiency.}
-        \item {Solution: Re-build of the CMS layer to connect Gutenberg's React components to our internal Go/GraphQL/Kafka APIs --- bypassing WordPress entirely for content storage.}
+        \item {Problem: A WordPress monolith blocked cross-team contribution. Every code change required PHP knowledge, and newsroom editors needed better tools. But we couldn't move fast enough on legacy codebase.}
+        \item {Solution: Re-build of the CMS layer to connect a React block editor to our internal APIs (Go/GraphQL/Kafka) --- bypassing WordPress entirely for content storage.}
             \begin{itemize}
                 \item {2-way transform layer between Gutenberg blocks and internal ``Ink Blocks.''}
                     \begin{itemize}
@@ -44,9 +44,8 @@
         \item {Built AI agents for Git commit message generation and unit test writing}
             \begin{itemize}
                 \item {Picked these two because they're high-impact and low-risk for AI augmentation.}
-                \item {Focused on sustainable patterns over hype-driven tooling.}
             \end{itemize}
-        \item {Introduced Orbstack (Docker Desktop replacement), RenovateBot for dependency updates, and Playwright smoke tests after deploys across the team.}
+        \item {Introduced Orbstack (Docker Desktop replacement), RenovateBot for dependency updates, and post-deploy Playwright smoke tests across the team.}
         \item {Coaching \& Mentoring: Engineers on the team grew to handle complex frontend work independently.}
             \begin{itemize}
                 \item {Built a culture of knowledge sharing and continuous learning.}
