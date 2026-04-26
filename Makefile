@@ -10,9 +10,9 @@ help: ## Display this help screen (default)
 .PHONY: help
 
 build: ## Compile and Generate PDF
-	xelatex Udit\ Desai\ -\ Resume\ -\ AwesomeCV.tex
+	xelatex -output-directory=archive -jobname=Udit\ Desai\ -\ Resume\ -\ $$(date +"%Y-%m-%d") Udit\ Desai\ -\ Resume\ -\ AwesomeCV.tex
 .PHONY: build
 
 watch: ## Compile and Generate PDF on Watch Mode
-	latexmk -pvc -xelatex Udit\ Desai\ -\ Resume\ -\ AwesomeCV.tex
+	latexmk -pvc -xelatex -outdir=archive -jobname=Udit\ Desai\ -\ Resume\ -\ $$(date +"%Y-%m-%d") Udit\ Desai\ -\ Resume\ -\ AwesomeCV.tex
 .PHONY: watch
